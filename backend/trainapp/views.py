@@ -12,4 +12,4 @@ def index(request):
 
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
-    serialize_class = UserSerializer
+    serializer_class = UserSerializer
