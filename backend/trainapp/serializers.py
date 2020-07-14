@@ -12,7 +12,7 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
 class ScheduleSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Schedule
-        fields = ('train ',
+        fields = ('train',
                   'departure_station',
                   'arrival_station',
                   'departure_time',

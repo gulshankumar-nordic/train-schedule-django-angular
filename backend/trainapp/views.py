@@ -41,9 +41,9 @@ def train_list(request):
 
 
 @csrf_exempt
-def train_Detail(request, primary_key):
+def train_detail(request, pk):
     try:
-        schedule = Schedule.objects.get(pk=primary_key)
+        schedule = Schedule.objects.get(pk=pk)
     except Schedule.DoesNotExist:
         return HttpResponse(status=status.HTTP_404_NOT_FOUND)
 
