@@ -1,6 +1,6 @@
 from django.contrib.auth.models import User
 from rest_framework import serializers
-from trainapp.models import schedule
+from trainapp.models import Schedule
 
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):
